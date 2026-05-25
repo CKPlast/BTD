@@ -43,6 +43,7 @@
             color: #666;
             font-size: 14px;
             margin-bottom: 25px;
+            font-weight: 500;
         }
         .section-title {
             font-size: 12px;
@@ -53,9 +54,14 @@
             text-align: left;
             border-bottom: 1px solid #eee;
             padding-bottom: 5px;
+            font-weight: 700;
         }
+        /* Buton yapısı ikonlarla daha hizalı olması için güncellendi */
         .btn {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
             color: white;
             text-decoration: none;
             padding: 14px;
@@ -69,11 +75,36 @@
         .btn:hover {
             opacity: 0.9;
         }
+        
         /* Buton Renkleri */
-        .btn-call { background-color: #007bff; }       /* ALİ BİLİCİ */
-        .btn-call-2 { background-color: #0069d9; }     /* TAHİR TUNÇER (Uyumlu Mavi) */
-        .btn-web { background-color: #343a40; }         /* Web Sitesi */
-        .btn-instagram { background-color: #e1306c; }  /* Instagram */
+        .btn-call { background-color: #007bff; }       
+        .btn-call-2 { background-color: #0069d9; }     
+        .btn-whatsapp { background-color: #25D366; } /* Yeni Eklenen WhatsApp Rengi */
+        .btn-web { background-color: #343a40; }         
+        .btn-instagram { background-color: #e1306c; }  
+        
+        /* CK Plast Footer Alanı */
+        .footer-wrapper {
+            margin-top: 30px;
+            border-top: 1px dashed #eee; 
+            padding-top: 15px;
+        }
+        .legal-footer {
+            font-size: 11px;
+            color: #999;
+            font-weight: 500;
+            margin-bottom: 3px;
+        }
+        .creator-tag {
+            font-size: 10px; 
+            color: #ccc; 
+            text-decoration: none; 
+            display: inline-block;
+        }
+        .creator-tag span {
+            font-weight: 700; 
+            color: #999; 
+        }
     </style>
 </head>
 <body>
@@ -84,21 +115,28 @@
     <h1>BTD HİDROLİK PNÖMATİK</h1>
     <p>Sızdırmazlık Elemanları</p>
     
-    <div class="section-title">Hızlı İletişim</div>
+    <div class="section-title">📍 Ali Bilici</div>
     
-    <a href="tel:+905072922146" class="btn btn-call">📞 ALİ BİLİCİ </a>
+    <a href="tel:+905072922146" class="btn btn-call">📞 ALİ BİLİCİ Ara</a>
+    <a href="https://wa.me/905072922146?text=Merhaba,%20BTD%20Hidrolik'ten%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-whatsapp">💬 WhatsApp'tan Yaz</a>
     
-    <a href="tel:+905348620380" class="btn btn-call-2">📞 TAHİR TUNÇER </a>
+    <div class="section-title">📍 Tahir Tunçer</div>
     
-    <div class="section-title">Bizi Takip Edin</div>
+    <a href="tel:+905348620380" class="btn btn-call-2">📞 TAHİR TUNÇER Ara</a>
+    <a href="https://wa.me/905348620380?text=Merhaba,%20BTD%20Hidrolik'ten%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-whatsapp">💬 WhatsApp'tan Yaz</a>
+    
+    <div class="section-title">🌐 Bizi Takip Edin</div>
     
     <a href="https://www.btdhidrolik.com.tr/" target="_blank" class="btn btn-web">🌐 Web Sitemiz</a>
     
     <a href="https://www.instagram.com/btdhidrolik.gaziantep?igsh=NWozYmlzd2J0Yzk4" target="_blank" class="btn btn-instagram">📸 Instagram Profilimiz</a>
+    
+    <div class="footer-wrapper">
+        <div class="legal-footer">© 2026 BTD Hidrolik Pnömatik</div>
+        <a href="#" target="_blank" class="creator-tag">Dijital Kart Tasarımı: <span>CK Plast</span></a>
+    </div>
 </div>
 
 </body>
 </html>
 
-</body>
-</html>
